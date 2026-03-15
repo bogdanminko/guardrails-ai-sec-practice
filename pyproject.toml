@@ -1,0 +1,20 @@
+[project]
+name = "ai-guardrails-itmo-workshop"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "gliner>=0.2.25",
+    "gliner2 @ git+https://github.com/bogdanminko/GLiNER2.git@feature/bi-encoder",
+    "hf-transfer>=0.1.9",
+    "ipykernel>=7.1.0",
+    "jupyter>=1.1.1",
+    "pandas>=2.3.3",
+    "python-dotenv>=1.2.1",
+    "transformers>=5.0.0",
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py313"]
